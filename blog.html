@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Lactoinsumos S.A.S.</title>
+  <meta name="description" content="Blog de Lactoinsumos S.A.S. Artículos sobre la industria alimentaria, tendencias, y la importancia de materias primas de calidad.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/logo/logo-small.png" type="image/png">
+  <style>
+    .icon-svg { width: 16px; height: 16px; fill: currentColor; }
+    .footer-social .icon-svg, .contact-socials .icon-svg { width: 18px; height: 18px; }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="header-logo"><img src="assets/logo/logo.png" alt="Lactoinsumos Logo"></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="productos.html">Productos</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contactenos.html">Contáctenos</a>
+      </nav>
+      <div class="header-social">
+        <a href="https://www.instagram.com/lactoinsumos/" target="_blank" title="Instagram"><svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-2.5a1 1 0 110 2 1 1 0 010-2z" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=100094780844048" target="_blank" title="Facebook"><svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill="currentColor"/></svg></a>
+      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="page-banner">
+    <h1>Blog</h1>
+    <p>Artículos, tendencias e información de valor para la industria alimentaria</p>
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / <span>Blog</span></div>
+  </section>
+
+  <!-- BLOG CARDS -->
+  <section class="section" id="blogList">
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- Artículo 1 -->
+        <div class="blog-card fade-in" onclick="showArticle(1)">
+          <div class="blog-card-img">
+            <img src="assets/blog/1.png" alt="Proveedor Confiable">
+          </div>
+          <div class="blog-card-body">
+            <h3>La Importancia de un Proveedor Confiable de Materias Primas en la Industria Alimentaria</h3>
+            <p>En la industria alimentaria, la calidad de los productos finales depende en gran medida de las materias primas utilizadas. Por ello, contar con un proveedor confiable no es solo una ventaja, sino una necesidad estratégica.</p>
+            <span class="blog-read-more">Leer más →</span>
+          </div>
+        </div>
+
+        <!-- Artículo 2 -->
+        <div class="blog-card fade-in" onclick="showArticle(2)">
+          <div class="blog-card-img">
+            <img src="assets/blog/3.jpg" alt="Elegir Proveedor">
+          </div>
+          <div class="blog-card-body">
+            <h3>¿Cómo Elegir un Proveedor de Materias Primas para la Industria de Alimentos?</h3>
+            <p>Elegir el proveedor adecuado de materias primas es una de las decisiones más estratégicas que una empresa de alimentos puede tomar. De esta elección dependen la calidad, rentabilidad y reputación del negocio.</p>
+            <span class="blog-read-more">Leer más →</span>
+          </div>
+        </div>
+
+        <!-- Artículo 3 -->
+        <div class="blog-card fade-in" onclick="showArticle(3)">
+          <div class="blog-card-img">
+            <img src="assets/blog/7.jpg" alt="Materias Primas de Calidad">
+          </div>
+          <div class="blog-card-body">
+            <h3>Beneficios de Trabajar con Materias Primas de Alta Calidad en sus Productos</h3>
+            <p>Utilizar materias primas de alta calidad puede significar la diferencia entre un producto promedio y un producto líder en el mercado. Descubre los beneficios de invertir en calidad desde la formulación.</p>
+            <span class="blog-read-more">Leer más →</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTÍCULO EXPANDIDO -->
+  <section class="section" id="articleView" style="display: none;">
+    <div class="article-container">
+      <button onclick="hideArticle()" class="btn btn-outline" style="margin-bottom: 30px;">← Volver al Blog</button>
+      <div id="articleContent"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo"><img src="assets/logo/logo.png" alt="Lactoinsumos"></div>
+          <p>Empresa importadora y comercializadora de materias primas para la industria de alimentos.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/lactoinsumos/" target="_blank" title="Instagram"><svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-2.5a1 1 0 110 2 1 1 0 010-2z" fill="currentColor"/></svg></a>
+            <a href="https://www.facebook.com/profile.php?id=100094780844048" target="_blank" title="Facebook"><svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <div class="footer-links">
+            <a href="index.html">Inicio</a><a href="empresa.html">Empresa</a><a href="productos.html">Productos</a>
+            <a href="cobertura.html">Cobertura</a><a href="blog.html">Blog</a><a href="contactenos.html">Contáctenos</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Productos</h4>
+          <div class="footer-links">
+            <a href="productos.html?cat=lacteos">Lácteos</a>
+            <a href="productos.html?cat=materias-primas">Materias Primas</a>
+            <a href="productos.html?cat=proteinas">Proteínas</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <div class="footer-contact-item"><span><svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg></span> Fijo: 604 501 8949</div>
+          <div class="footer-contact-item"><span><svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" fill="currentColor"/></svg></span> Cel: 310 872 3257</div>
+          <div class="footer-contact-item"><span><svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg></span> contactenos@lactoinsumos.com</div>
+          <div class="footer-contact-item"><span><svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" fill="currentColor"/></svg></span> Cra 67 No. 78-280, Medellín</div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 LACTOINSUMOS S.A.S. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573108723257" target="_blank" class="whatsapp-fab" title="WhatsApp" target="_blank" href="https://wa.me/573108723257"><svg class="icon-svg" viewBox="0 0 24 24" width="24" height="24" style="display:block;"><path d="M12.031 2a9.992 9.992 0 00-8.625 14.975l-1.334 4.887 5 1.31A10 10 0 1012.031 2zm6.75 14.28c-.28.79-1.42 1.45-1.94 1.62-.43.14-1 .31-2.91-.45-2.45-.98-4.04-3.48-4.16-3.65-.12-.17-.99-1.32-.99-2.5 0-1.19.64-1.78.85-2.01.21-.24.47-.3.62-.3.15 0 .3 0 .43.01.14 0 .32-.05.51.4.21.5.7 1.7.77 1.83.06.13.1.28.01.45-.09.18-.14.28-.27.44-.13.16-.28.35-.4.5-.14.15-.31.32-.13.62.18.3.8 1.33 1.73 2.15.1.1.53.53 1.13.78.2.08.38.16.58.12.2-.04.47-.2.62-.48.15-.28.15-.53.11-.62-.04-.09-.15-.14-.3-.22-.15-.09-.9-.45-1.04-.51-.14-.06-.24-.09-.34.06-.09.15-.37.45-.45.54-.08.09-.17.1-.32.02-.15-.08-.63-.23-1.2-0.74-.43-.38-.72-.85-.81-1-.09-.15-.01-.23.06-.3.06-.06.15-.17.23-.25.08-.08.11-.14.16-.24.05-.1.03-.18-.01-.26-.04-.08-.34-.84-.47-1.15-.13-.3-.26-.26-.35-.26h-.29c-.1 0-.25.04-.39.18z" fill="currentColor"/></svg></a>
+
+  <script>
+    const articles = {
+      1: {
+        title: 'La Importancia de un Proveedor Confiable de Materias Primas en la Industria Alimentaria',
+        content: `
+          <h1>La Importancia de un Proveedor Confiable de Materias Primas en la Industria Alimentaria</h1>
+          <p>En la industria alimentaria, la calidad de los productos finales depende en gran medida de las materias primas utilizadas. Por ello, contar con un proveedor confiable no es solo una ventaja, sino una necesidad estratégica para cualquier empresa dedicada a la producción de alimentos.</p>
+          
+          <h2>¿Por qué es tan importante un proveedor confiable?</h2>
+          <p>Un proveedor confiable garantiza la calidad, consistencia y trazabilidad de las materias primas, lo que se traduce directamente en productos de mejor calidad, eficiencia operativa y satisfacción del cliente final.</p>
+          
+          <h2>1. Calidad Consistente</h2>
+          <p>Un proveedor confiable garantiza que cada lote de materia prima cumpla con los estándares de calidad establecidos. Esto asegura que la producción no se vea afectada por variaciones en las características de los ingredientes, manteniendo la consistencia que el consumidor final espera.</p>
+          
+          <h2>2. Cumplimiento Regulatorio</h2>
+          <p>La industria alimentaria está sujeta a estrictas regulaciones sanitarias. Un proveedor confiable cuenta con todas las certificaciones y documentación necesaria (fichas técnicas, certificados de análisis, certificaciones sanitarias) para que su empresa cumpla con la normatividad vigente.</p>
+          
+          <h2>3. Abastecimiento Oportuno</h2>
+          <p>La continuidad de su línea de producción depende del suministro oportuno de materias primas. Un proveedor confiable cuenta con la logística y el inventario necesarios para garantizar entregas puntuales y evitar paros en su producción.</p>
+          
+          <h2>4. Soporte Técnico Especializado</h2>
+          <p>Un buen proveedor no solo vende productos, sino que acompaña a sus clientes con asesoría técnica especializada. Esto incluye recomendaciones de formulación, optimización de procesos y resolución de problemas técnicos.</p>
+          
+          <h2>5. Precios Competitivos</h2>
+          <p>Un proveedor que importa directamente sus materias primas puede ofrecer mejores precios al eliminar intermediarios. Esto, combinado con la calidad del producto, genera un excelente retorno de inversión para su empresa.</p>
+          
+          <h2>Conclusión</h2>
+          <p>Elegir un proveedor confiable de materias primas es una inversión en la calidad, eficiencia y sostenibilidad de su negocio. En <strong>LACTOINSUMOS S.A.S.</strong>, nos hemos consolidado como un aliado estratégico para la industria alimentaria colombiana, ofreciendo productos de calidad, precios competitivos y acompañamiento permanente.</p>
+          <p><a href="contactenos.html" class="btn btn-primary" style="margin-top: 15px;">Contactar a LACTOINSUMOS</a></p>
+        `
+      },
+      2: {
+        title: '¿Cómo Elegir un Proveedor de Materias Primas para la Industria de Alimentos?',
+        content: `
+          <h1>¿Cómo Elegir un Proveedor de Materias Primas para la Industria de Alimentos?</h1>
+          <p>Elegir el proveedor adecuado de materias primas es una de las decisiones más estratégicas que una empresa de alimentos puede tomar. De esta elección dependen la calidad, rentabilidad y reputación del negocio.</p>
+          
+          <h2>Factores Clave a Considerar</h2>
+          
+          <h2>1. Certificaciones y Cumplimiento Normativo</h2>
+          <p>Verifique que el proveedor cuente con las certificaciones sanitarias y de calidad requeridas por las autoridades competentes (INVIMA, ISO, BPM, HACCP). Esto garantiza que las materias primas cumplen con los estándares de seguridad alimentaria.</p>
+          
+          <h2>2. Trazabilidad Completa</h2>
+          <p>Un proveedor serio debe ofrecer trazabilidad desde el origen hasta la entrega. Fichas técnicas, certificados de análisis por lote y documentación de origen son esenciales para garantizar la calidad y resolver cualquier eventualidad.</p>
+          
+          <h2>3. Capacidad de Abastecimiento</h2>
+          <p>Evalúe la capacidad del proveedor para mantener un suministro constante y oportuno. Pregunte sobre sus niveles de inventario, frecuencia de importación y tiempo de entrega promedio.</p>
+          
+          <h2>4. Soporte Técnico</h2>
+          <p>Un proveedor que ofrece acompañamiento técnico es invaluable. Busque proveedores con equipo especializado que pueda asesorarlo en formulación, optimización de procesos y resolución de problemas.</p>
+          
+          <h2>5. Relación Calidad-Precio</h2>
+          <p>No siempre el precio más bajo es el mejor. Evalúe la calidad del producto en relación con su precio. Un producto de calidad superior puede reducir desperdicios, mejorar rendimientos y aumentar la satisfacción del cliente.</p>
+          
+          <h2>6. Experiencia en el Sector</h2>
+          <p>Un proveedor con experiencia en la industria alimentaria entiende las necesidades específicas de su sector y puede anticipar soluciones a problemas comunes.</p>
+          
+          <h2>Conclusión</h2>
+          <p>La elección de un proveedor de materias primas es un proceso que requiere análisis y criterio. En <strong>LACTOINSUMOS S.A.S.</strong> cumplimos con todos estos criterios y más. Con más de 18 años de experiencia, somos el aliado que su industria necesita.</p>
+          <p><a href="contactenos.html" class="btn btn-primary" style="margin-top: 15px;">Solicitar más información</a></p>
+        `
+      },
+      3: {
+        title: 'Beneficios de Trabajar con Materias Primas de Alta Calidad en sus Productos',
+        content: `
+          <h1>Beneficios de Trabajar con Materias Primas de Alta Calidad en sus Productos</h1>
+          <p>Utilizar materias primas de alta calidad puede significar la diferencia entre un producto promedio y un producto líder en el mercado. En un entorno cada vez más competitivo, la calidad de los ingredientes define la calidad del producto final.</p>
+          
+          <h2>1. Mejores Rendimientos de Producción</h2>
+          <p>Las materias primas de alta calidad tienen mejores propiedades funcionales, lo que se traduce en mayor rendimiento por kilogramo utilizado. Esto reduce costos efectivos de producción, a pesar de que el precio unitario pueda ser ligeramente superior.</p>
+          
+          <h2>2. Consistencia en el Producto Final</h2>
+          <p>Cuando se trabaja con ingredientes de calidad certificada, cada lote mantiene las mismas características físicas, químicas y sensoriales. Esto asegura que el producto final siempre cumpla con las expectativas del consumidor.</p>
+          
+          <h2>3. Cumplimiento Regulatorio Sin Complicaciones</h2>
+          <p>Las materias primas de alta calidad vienen con documentación completa (fichas técnicas, certificados de análisis, declaraciones de conformidad), facilitando el cumplimiento de la normatividad sanitaria y las auditorías regulatorias.</p>
+          
+          <h2>4. Mejor Experiencia del Consumidor</h2>
+          <p>La calidad de los ingredientes se percibe directamente en el sabor, textura y apariencia del producto final. Los consumidores notan la diferencia y premian a las marcas que ofrecen productos superiores.</p>
+          
+          <h2>5. Menor Desperdicio</h2>
+          <p>Las materias primas de mala calidad generan más rechazos, reprocesos y desperdicio. Invertir en calidad desde el inicio reduce significativamente estos costos ocultos.</p>
+          
+          <h2>6. Ventaja Competitiva Sostenible</h2>
+          <p>La calidad es un diferenciador que no puede ser fácilmente replicado por la competencia. Construir una reputación de calidad genera lealtad del cliente y posicionamiento de marca a largo plazo.</p>
+          
+          <h2>Conclusión</h2>
+          <p>Invertir en materias primas de alta calidad no es un gasto, es una inversión estratégica que genera retornos tangibles en calidad, eficiencia y posicionamiento de marca. En <strong>LACTOINSUMOS S.A.S.</strong> nos comprometemos a ofrecer solo materias primas que cumplen con los más altos estándares de calidad.</p>
+          <p><a href="productos.html" class="btn btn-primary" style="margin-top: 15px;">Ver nuestro catálogo</a></p>
+        `
+      }
+    };
+
+    function showArticle(id) {
+      document.getElementById('blogList').style.display = 'none';
+      document.getElementById('articleView').style.display = 'block';
+      document.getElementById('articleContent').innerHTML = articles[id].content;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function hideArticle() {
+      document.getElementById('blogList').style.display = 'block';
+      document.getElementById('articleView').style.display = 'none';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos | Lactoinsumos S.A.S.</title>
+  <meta name="description" content="Catálogo de productos Lactoinsumos: Lácteos, Materias Primas y Proteínas. Materias primas de calidad para la industria alimentaria colombiana.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/logo/logo-small.png" type="image/png">
+  <style>
+    .icon-svg { width: 16px; height: 16px; fill: currentColor; }
+    .footer-social .icon-svg, .contact-socials .icon-svg { width: 18px; height: 18px; }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="header-logo"><img src="assets/logo/logo.png" alt="Lactoinsumos Logo"></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="productos.html" class="active">Productos</a>
+        <a href="cobertura.html">Cobertura</a>
+        <a href="blog.html">Blog</a>
+        <a href="contactenos.html">Contáctenos</a>
+      </nav>
+      <div class="header-social">
+        <a href="https://www.instagram.com/lactoinsumos/" target="_blank" title="Instagram"><svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-2.5a1 1 0 110 2 1 1 0 010-2z" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=100094780844048" target="_blank" title="Facebook"><svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill="currentColor"/></svg></a>
+      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="page-banner">
+    <h1>Nuestros Productos</h1>
+    <p>Materias primas de calidad para la industria alimentaria</p>
+    <div class="breadcrumb"><a href="index.html">Inicio</a> / <span>Productos</span></div>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section class="section">
+    <div class="container">
+      <div class="product-filters" id="productFilters">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="lacteos">Lácteos</button>
+        <button class="filter-btn" data-category="materias-primas">Materias Primas</button>
+        <button class="filter-btn" data-category="proteinas">Proteínas</button>
+      </div>
+      <div class="products-grid" id="productsGrid">
+
+        <!-- === LÁCTEOS === -->
+        <div class="product-card fade-in" data-category="lacteos" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/lacteos/L2.png" alt="Leche Entera"></div>
+          <div class="product-card-body">
+            <h3>Leche Entera en Polvo</h3>
+            <p>Producto obtenido por la deshidratación de leche de vaca entera pasteurizada. Conserva todas las propiedades nutricionales de la leche fresca.</p>
+            <span class="product-tag">Lácteos</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Producto obtenido por la deshidratación de leche de vaca entera pasteurizada mediante un proceso de secado por aspersión (spray drying). Conserva las propiedades nutricionales de la leche fresca, incluyendo proteínas, grasas, vitaminas y minerales esenciales.</p>
+            <h4>Usos</h4>
+            <p>Reconstitución de leche líquida, producción de yogur, quesos procesados, helados, postres, chocolates, panadería, confitería, preparaciones culinarias y como ingrediente nutritivo en productos alimenticios.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="lacteos" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/lacteos/L3.png" alt="Leche Descremada"></div>
+          <div class="product-card-body">
+            <h3>Leche Descremada en Polvo</h3>
+            <p>Producto obtenido por la deshidratación de leche de vaca descremada, con bajo contenido de grasa y alto valor proteico.</p>
+            <span class="product-tag">Lácteos</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Producto derivado de la deshidratación de leche de vaca a la que se le ha retirado la mayor parte de su contenido graso. Posee un alto valor proteico y es versátil en diversas aplicaciones industriales.</p>
+            <h4>Usos</h4>
+            <p>Producción de leche reconstituida baja en grasa, yogures descremados, quesos, helados light, preparación de mezclas alimenticias, suplementos nutricionales y productos de panadería.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="lacteos" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/lacteos/L4.png" alt="Sólidos de Mantequilla"></div>
+          <div class="product-card-body">
+            <h3>Sólidos de Mantequilla</h3>
+            <p>Producto obtenido a partir de la grasa láctea, utilizado como fuente de grasas naturales en procesos industriales alimentarios.</p>
+            <span class="product-tag">Lácteos</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Producto obtenido a partir de la crema de leche mediante un proceso de separación y secado. Rico en grasas naturales de origen lácteo con perfil sensorial característico.</p>
+            <h4>Usos</h4>
+            <p>Elaboración de helados, productos de panadería, confitería, chocolatería, salsas cremosas, productos Lácteos reconstituidos y mezclas alimenticias que requieren aporte de grasa láctea.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="lacteos" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/lacteos/L5.png" alt="Suero Dulce"></div>
+          <div class="product-card-body">
+            <h3>Suero Dulce en Polvo</h3>
+            <p>Producto deshidratado derivado del suero de leche obtenido durante la elaboración de quesos, rico en lactosa y proteínas.</p>
+            <span class="product-tag">Lácteos</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Producto obtenido por el secado del suero de leche resultante de la elaboración de quesos. Contiene lactosa, proteínas de suero, minerales y vitaminas. Es fuente importante de nutrientes.</p>
+            <h4>Usos</h4>
+            <p>Producción de bebidas lácteas, helados, panadería, confitería, productos cárnicos, mezclas secas, alimentos para mascotas, alimentos infantiles y suplementos nutricionales.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="lacteos" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/lacteos/L6.png" alt="Suero Desmineralizado"></div>
+          <div class="product-card-body">
+            <h3>Suero Desmineralizado</h3>
+            <p>Suero dulce en polvo sometido a procesos de desmineralización para reducir su contenido mineral, ideal para fórmulas infantiles.</p>
+            <span class="product-tag">Lácteos</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Suero dulce en polvo al que se le ha reducido el contenido de minerales mediante procesos de desmineralización (electrodiálisis o intercambio iónico). Disponible en diferentes grados de desmineralización (D40, D50, D70, D90).</p>
+            <h4>Usos</h4>
+            <p>Fórmulas infantiles, productos dietéticos, bebidas nutricionales, Lácteos modificados, productos de confitería y panadería especializada.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="lacteos" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/lacteos/L7.png" alt="Permeato de Suero"></div>
+          <div class="product-card-body">
+            <h3>Permeato de Suero</h3>
+            <p>Subproducto de la filtración del suero de leche, rico en lactosa y minerales, con excelente funcionalidad.</p>
+            <span class="product-tag">Lácteos</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Producto obtenido de la ultrafiltración del suero de leche. Compuesto principalmente por lactosa y minerales, con bajo contenido de proteína. Excelente sustituto económico en diversas formulaciones.</p>
+            <h4>Usos</h4>
+            <p>Panadería, confitería, bebidas, snacks, productos cárnicos, alimentos para mascotas, mezclas secas y como sustituto parcial de sólidos Lácteos.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="lacteos" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/lacteos/L8.png" alt="Permeato de Leche"></div>
+          <div class="product-card-body">
+            <h3>Permeato de Leche</h3>
+            <p>Producto obtenido de la ultrafiltración de la leche, compuesto por lactosa y minerales, similar al permeato de suero.</p>
+            <span class="product-tag">Lácteos</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Producto obtenido de la ultrafiltración de leche entera o descremada. Similar al permeato de suero pero con perfil mineral ligeramente diferente. Compuesto principalmente por lactosa y sales minerales.</p>
+            <h4>Usos</h4>
+            <p>Panadería, confitería, snacks, productos Lácteos, bebidas, como fuente de lactosa en diversas formulaciones y sustituto de sólidos no grasos de leche.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="lacteos" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/lacteos/L9.png" alt="Fat Filled"></div>
+          <div class="product-card-body">
+            <h3>Fat Filled</h3>
+            <p>Producto en polvo donde la grasa láctea se sustituye parcial o totalmente con aceites vegetales, ofreciendo buena funcionalidad.</p>
+            <span class="product-tag">Lácteos</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Producto lácteo en polvo en el que la grasa láctea natural ha sido sustituida parcial o totalmente por grasas vegetales (aceite de palma, coco, etc.). Mantiene buenas propiedades funcionales a un costo menor.</p>
+            <h4>Usos</h4>
+            <p>Reconstitución de leche, bebidas lácteas, helados, yogures, panadería, confitería, y en aplicaciones donde se requiere un sustituto económico de la leche entera en polvo.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <!-- === MATERIAS PRIMAS === -->
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP3.png" alt="Maltodextrina 10-12"></div>
+          <div class="product-card-body">
+            <h3>Maltodextrina DE 10-12</h3>
+            <p>Carbohidrato derivado del almidón de maíz con baja conversión, ideal como agente de cuerpo y relleno en formulaciones.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Carbohidrato obtenido por hidrólisis parcial del almidón de maíz. El grado DE (Dextrosa Equivalente) de 10-12 indica una baja conversión, proporcionando buena textura y cuerpo con baja dulzura.</p>
+            <h4>Usos</h4>
+            <p>Agente de relleno, encapsulante, espesante, mejora de textura en bebidas, sopas, salsas, alimentos infantiles, Lácteos, confitería y suplementos deportivos.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP4.png" alt="Maltodextrina 18-20"></div>
+          <div class="product-card-body">
+            <h3>Maltodextrina DE 18-20</h3>
+            <p>Maltodextrina con mayor grado de conversión, proporcionando ligeramente más dulzura y mejor solubilidad.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Maltodextrina con un grado DE de 18-20, lo que indica una conversión mayor del almidón. Proporciona ligeramente más dulzura que la DE 10-12 y tiene mejor solubilidad.</p>
+            <h4>Usos</h4>
+            <p>Bebidas deportivas, suplementos nutricionales, confitería, panadería, alimentos instantáneos, base para mezclas secas y como fuente de energía de rápida absorción.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP5.png" alt="Glucosa"></div>
+          <div class="product-card-body">
+            <h3>Glucosa en Polvo</h3>
+            <p>Azúcar simple derivada del almidón, utilizada como fuente de energía rápida y mejorador de textura.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Monosacárido obtenido por hidrólisis completa del almidón de maíz. Es la forma más simple de azúcar y fuente de energía inmediata. Alta solubilidad y capacidad higroscópica.</p>
+            <h4>Usos</h4>
+            <p>Confitería, panadería, bebidas energéticas, heladería, productos farmacéuticos, alimentación deportiva y como edulcorante en diversas aplicaciones alimenticias.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP6.png" alt="Dextrosa Anhidra"></div>
+          <div class="product-card-body">
+            <h3>Dextrosa Anhidra</h3>
+            <p>Forma cristalina de la glucosa sin agua de cristalización, de alta pureza y solubilidad.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>D-Glucosa purificada y cristalizada sin agua de cristalización. De alta pureza (‰¥99%), excelente solubilidad, y perfil de sabor limpio. Fluye libremente como polvo cristalino blanco.</p>
+            <h4>Usos</h4>
+            <p>Confitería, panadería, heladería, bebidas, productos cárnicos (embutidos), sueros orales, aplicaciones farmacéuticas y como sustrato de fermentación.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP7.png" alt="Dextrosa Monohidratada"></div>
+          <div class="product-card-body">
+            <h3>Dextrosa Monohidratada</h3>
+            <p>Glucosa cristalina con una molécula de agua, utilizada en la industria alimentaria y farmacéutica.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>D-Glucosa purificada y cristalizada que contiene una molécula de agua de cristalización. Polvo cristalino blanco, de flujo libre, con dulzura moderada (70-75% respecto a la sacarosa).</p>
+            <h4>Usos</h4>
+            <p>Industria de bebidas, confitería, panadería, productos cárnicos, aplicaciones farmacéuticas, alimentos infantiles y como fuente de energía en productos deportivos.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP8.png" alt="Glutamato Monosódico"></div>
+          <div class="product-card-body">
+            <h3>Glutamato Monosódico</h3>
+            <p>Potenciador del sabor umami, ampliamente utilizado para realzar el sabor natural de los alimentos.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Sal sódica del ácido glutámico, uno de los aminoácidos más abundantes en la naturaleza. Potenciador del sabor umami (quinto sabor). Cristales blancos, inodoros, altamente solubles.</p>
+            <h4>Usos</h4>
+            <p>Sazonadores, sopas, salsas, snacks, productos cárnicos, caldos concentrados, alimentos congelados y como potenciador general del sabor en la industria alimentaria.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP9.png" alt="Grasa Vegetal"></div>
+          <div class="product-card-body">
+            <h3>Grasa Vegetal en Polvo</h3>
+            <p>Grasa de origen vegetal convertida en polvo mediante secado por aspersión, fácil de dosificar y mezclar.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Grasa de origen vegetal (palma, coco o sus mezclas) transformada a polvo mediante secado por aspersión con un carrier (caseinato, maltodextrina). Contenido graso típico de 50-75%.</p>
+            <h4>Usos</h4>
+            <p>Cremas no lácteas para café (creamers), mezclas para bebidas, sopas instantáneas, panadería, confitería, snacks, helados y como sustituto de grasas lácteas.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP10.png" alt="Goma Guar"></div>
+          <div class="product-card-body">
+            <h3>Goma Guar</h3>
+            <p>Hidrocoloide natural extraído de la semilla de guar, utilizado como espesante y estabilizante en la industria alimentaria.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Polisacárido natural extraído del endospermo de la semilla de guar (Cyamopsis tetragonoloba). Es un potente espesante que puede aumentar la viscosidad incluso a baja concentración.</p>
+            <h4>Usos</h4>
+            <p>Heladería, Lácteos, salsas, panificación, bebidas, productos cárnicos, alimentos congelados, sopas y como estabilizante general en la industria alimentaria.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP11.png" alt="Goma Xanthana"></div>
+          <div class="product-card-body">
+            <h3>Goma Xanthana</h3>
+            <p>Polisacárido producido por fermentación bacteriana, con propiedades espesantes y estabilizantes únicas.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Polisacárido producido por la fermentación de Xanthomonas campestris. Excelente espesante y estabilizante con propiedades reológicas pseudoplásticas únicas. Estable en amplio rango de pH y temperatura.</p>
+            <h4>Usos</h4>
+            <p>Salsas, aderezos, bebidas, productos Lácteos, panificación sin gluten, productos bajos en grasa, helados y como estabilizante en emulsiones y suspensiones.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP12.png" alt="Mantequilla"></div>
+          <div class="product-card-body">
+            <h3>Mantequilla</h3>
+            <p>Producto lácteo sólido elaborado a partir de la crema de leche, con alto contenido de grasa láctea natural.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Producto lácteo sólido obtenido por batido de la crema de leche pasteurizada. Contenido mínimo de grasa láctea del 80%. Puede ser con o sin sal. Perfil aromático natural y versátil.</p>
+            <h4>Usos</h4>
+            <p>Panadería, repostería, confitería, cocina industrial, productos de hojaldre, salsas, helados premium y como ingrediente base en formulaciones que requieren grasa láctea natural.</p>
+            <h4>Presentación</h4>
+            <p>Bloques de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP13.png" alt="Cocoa Alcalina"></div>
+          <div class="product-card-body">
+            <h3>Cocoa Alcalina</h3>
+            <p>Cacao en polvo procesado con álcali para suavizar su sabor y oscurecer su color, aportando un perfil más suave.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Cacao en polvo sometido a un proceso de alcalinización (Dutch process) que neutraliza la acidez natural del cacao, oscurece su color y suaviza su sabor. Mayor solubilidad que la cocoa natural.</p>
+            <h4>Usos</h4>
+            <p>Chocolatería, heladería, panadería, bebidas de chocolate, confitería, postres, coberturas y como ingrediente de color oscuro en productos de repostería premium.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP14.png" alt="Cocoa Natural"></div>
+          <div class="product-card-body">
+            <h3>Cocoa Natural</h3>
+            <p>Cacao en polvo sin proceso de alcalinización, preservando el sabor natural intenso y la acidez característica.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Cacao en polvo obtenido de la molienda de la torta de cacao sin tratamiento alcalino. Conserva su acidez natural, color más claro y sabor más intenso característico del cacao.</p>
+            <h4>Usos</h4>
+            <p>Chocolatería artesanal, repostería, bebidas calientes, helados, postres, brownies y en aplicaciones donde se desee un sabor a cacao más pronunciado e intenso.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="materias-primas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/materias-primas/MP15.png" alt="Ácido Cítrico"></div>
+          <div class="product-card-body">
+            <h3>Ácido Cítrico</h3>
+            <p>Ácido orgánico natural usado como acidulante, conservante y potenciador de sabor en la industria alimentaria.</p>
+            <span class="product-tag">Materias Primas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Ácido orgánico débil que se encuentra de manera natural en los cítricos. Producido industrialmente por fermentación. Cristales blancos, inodoros, altamente solubles, con sabor ácido característico.</p>
+            <h4>Usos</h4>
+            <p>Bebidas, confitería, conservas, productos Lácteos, panadería, como regulador de pH, antioxidante, conservante natural y potenciador de sabor ácido.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <!-- === PROTEÍNAS === -->
+        <div class="product-card fade-in" data-category="proteinas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/proteinas/P3.png" alt="WPI 90%"></div>
+          <div class="product-card-body">
+            <h3>WPI - Proteína Aislada de Suero 90%</h3>
+            <p>Proteína de suero de la más alta pureza con 90% de concentración proteica, mínima grasa y lactosa.</p>
+            <span class="product-tag">Proteínas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Proteína de suero de leche aislada mediante microfiltración o intercambio iónico. Contiene ‰¥90% de proteína en base seca, con mínimos niveles de grasa y lactosa. La forma más pura de proteína de suero.</p>
+            <h4>Usos</h4>
+            <p>Suplementos deportivos premium, barras proteicas, bebidas proteicas, alimentos funcionales, fórmulas médicas y aplicaciones que requieren alto contenido proteico con mínima grasa.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 20/25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="proteinas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/proteinas/P4.png" alt="WPC 80%"></div>
+          <div class="product-card-body">
+            <h3>WPC - Proteína Concentrada 80%</h3>
+            <p>Proteína de suero concentrada con 80% de contenido proteico, excelente perfil de aminoácidos y buena solubilidad.</p>
+            <span class="product-tag">Proteínas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Proteína de suero de leche concentrada mediante ultrafiltración. Contiene ‰¥80% de proteína, con perfil completo de aminoácidos esenciales. Buena solubilidad y versatilidad funcional.</p>
+            <h4>Usos</h4>
+            <p>Suplementos deportivos, barras proteicas, bebidas, productos de panadería enriquecidos, yogures, quesos procesados, productos cárnicos y alimentos funcionales.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 20/25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="proteinas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/proteinas/P5.png" alt="WPI 35%"></div>
+          <div class="product-card-body">
+            <h3>WPI - Proteína Aislada 35%</h3>
+            <p>Proteína de suero con concentración media del 35%, versátil y económica para diversas aplicaciones alimentarias.</p>
+            <span class="product-tag">Proteínas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Concentrado de proteína de suero con 35% de contenido proteico. Ofrece un buen balance entre funcionalidad, valor nutricional y costo. Contiene también lactosa y minerales del suero.</p>
+            <h4>Usos</h4>
+            <p>Productos de panadería, bebidas, Lácteos, alimentos procesados, productos cárnicos, como mejorador de textura y aporte nutricional en formulaciones alimentarias.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="proteinas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/proteinas/P6.png" alt="Caseinato de Calcio"></div>
+          <div class="product-card-body">
+            <h3>Caseinato de Calcio</h3>
+            <p>Proteína derivada de la caseína de la leche, con excelentes propiedades emulsionantes y estabilizantes.</p>
+            <span class="product-tag">Proteínas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Derivado proteico obtenido por la reacción de la caseína con hidróxido de calcio. Alto contenido proteico (‰¥88%), excelentes propiedades emulsionantes, espumantes y estabilizantes. Fuente adicional de calcio.</p>
+            <h4>Usos</h4>
+            <p>Cremas no lácteas, productos cárnicos (embutidos), quesos análogos, suplementos nutricionales, bebidas proteicas, postres y como emulsionante en diversas aplicaciones.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="proteinas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/proteinas/P7.png" alt="Caseinato de Sodio"></div>
+          <div class="product-card-body">
+            <h3>Caseinato de Sodio</h3>
+            <p>Proteína soluble de caseína que ofrece excelentes propiedades funcionales como emulsionante y agente texturizante.</p>
+            <span class="product-tag">Proteínas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Sal sódica de la caseína obtenida por tratamiento con hidróxido de sodio. Más soluble que el caseinato de calcio. Alto contenido proteico (‰¥88%) con excelentes propiedades funcionales.</p>
+            <h4>Usos</h4>
+            <p>Cremas para café (creamers), productos cárnicos, quesos procesados, suplementos proteicos, postres, salsas, sopas cremosas y como agente espesante y estabilizante.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+        <div class="product-card fade-in" data-category="proteinas" onclick="openModal(this)">
+          <div class="product-card-img"><img src="assets/productos/proteinas/P8.png" alt="Caseína Renina"></div>
+          <div class="product-card-body">
+            <h3>Caseína Renina</h3>
+            <p>Caseína obtenida por coagulación enzimática con renina, con propiedades ideales para la industria quesera.</p>
+            <span class="product-tag">Proteínas</span>
+          </div>
+          <div class="product-detail" hidden>
+            <h4>Descripción</h4>
+            <p>Caseína obtenida por coagulación enzimática de la leche mediante renina (quimosina). Insoluble en agua, con excelente capacidad de formación de textura. Alto contenido proteico y buen perfil de aminoácidos.</p>
+            <h4>Usos</h4>
+            <p>Industria quesera, quesos análogos, productos cárnicos, snacks proteicos, como fuente de proteína en formulaciones especiales y en la industria de alimentos funcionales.</p>
+            <h4>Presentación</h4>
+            <p>Sacos de 25 kg.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-red">
+    <div class="container" style="text-align: center;">
+      <h2 class="fade-in" style="color: white; margin-bottom: 15px;">¿Necesita una cotización?</h2>
+      <p class="fade-in" style="color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 600px; margin: 0 auto 30px;">Contáctenos para recibir información detallada de precios, fichas técnicas y asesoría personalizada.</p>
+      <a href="contactenos.html" class="btn btn-white fade-in">Solicitar Cotización</a>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo"><img src="assets/logo/logo.png" alt="Lactoinsumos"></div>
+          <p>Empresa importadora y comercializadora de materias primas para la industria de alimentos.</p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/lactoinsumos/" target="_blank" title="Instagram"><svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-2.5a1 1 0 110 2 1 1 0 010-2z" fill="currentColor"/></svg></a>
+            <a href="https://www.facebook.com/profile.php?id=100094780844048" target="_blank" title="Facebook"><svg class="icon-svg" viewBox="0 0 24 24" width="18" height="18"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <div class="footer-links">
+            <a href="index.html">Inicio</a><a href="empresa.html">Empresa</a><a href="productos.html">Productos</a>
+            <a href="cobertura.html">Cobertura</a><a href="blog.html">Blog</a><a href="contactenos.html">Contáctenos</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Productos</h4>
+          <div class="footer-links">
+            <a href="productos.html?cat=lacteos">Lácteos</a>
+            <a href="productos.html?cat=materias-primas">Materias Primas</a>
+            <a href="productos.html?cat=proteinas">Proteínas</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <div class="footer-contact-item"><span><svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg></span> Fijo: 604 501 8949</div>
+          <div class="footer-contact-item"><span><svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" fill="currentColor"/></svg></span> Cel: 310 872 3257</div>
+          <div class="footer-contact-item"><span><svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16" style="display:inline-block;vertical-align:middle;margin-right:4px;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg></span> contactenos@lactoinsumos.com</div>
+          <div class="footer-contact-item"><span><svg class="icon-svg" viewBox="0 0 24 24" width="16" height="16"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" fill="currentColor"/></svg></span> Cra 67 No. 78-280, Medellín</div>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 LACTOINSUMOS S.A.S. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/573108723257" target="_blank" class="whatsapp-fab" title="WhatsApp" target="_blank" href="https://wa.me/573108723257"><svg class="icon-svg" viewBox="0 0 24 24" width="24" height="24" style="display:block;"><path d="M12.031 2a9.992 9.992 0 00-8.625 14.975l-1.334 4.887 5 1.31A10 10 0 1012.031 2zm6.75 14.28c-.28.79-1.42 1.45-1.94 1.62-.43.14-1 .31-2.91-.45-2.45-.98-4.04-3.48-4.16-3.65-.12-.17-.99-1.32-.99-2.5 0-1.19.64-1.78.85-2.01.21-.24.47-.3.62-.3.15 0 .3 0 .43.01.14 0 .32-.05.51.4.21.5.7 1.7.77 1.83.06.13.1.28.01.45-.09.18-.14.28-.27.44-.13.16-.28.35-.4.5-.14.15-.31.32-.13.62.18.3.8 1.33 1.73 2.15.1.1.53.53 1.13.78.2.08.38.16.58.12.2-.04.47-.2.62-.48.15-.28.15-.53.11-.62-.04-.09-.15-.14-.3-.22-.15-.09-.9-.45-1.04-.51-.14-.06-.24-.09-.34.06-.09.15-.37.45-.45.54-.08.09-.17.1-.32.02-.15-.08-.63-.23-1.2-0.74-.43-.38-.72-.85-.81-1-.09-.15-.01-.23.06-.3.06-.06.15-.17.23-.25.08-.08.11-.14.16-.24.05-.1.03-.18-.01-.26-.04-.08-.34-.84-.47-1.15-.13-.3-.26-.26-.35-.26h-.29c-.1 0-.25.04-.39.18z" fill="currentColor"/></svg></a>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
